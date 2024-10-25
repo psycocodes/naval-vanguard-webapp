@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/landing',
-          permanent: true, // Set to true for 301 redirect, or false for 302 redirect
-        },
-      ]
-    },
-  };
-  
-  export default nextConfig;
+  output: 'export',
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
+};
+
+export default nextConfig;

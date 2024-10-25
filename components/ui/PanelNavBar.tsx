@@ -1,7 +1,5 @@
 "use client";
 import Links from "@/constants/links";
-import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -16,7 +14,6 @@ const PanelNavBar = () => {
   const currentPath = usePathname();
   function setLinkStyles(itemLink: string) {
     const baseStyle = "mt-10 p-5 text-l font-semibold";
-    const baseColor = "text-stone-400";
     const accentColor = "text-amber-300";
     // This is done to ensure Home doesnt get highlighted in other tabs
     // Determine if the link is active based on the current path

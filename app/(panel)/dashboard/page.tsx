@@ -1,7 +1,6 @@
 import Comms from "@/components/ui/PanelComms";
 import InfoCard from "@/components/ui/PanelInfoCard";
 import ProfileCard from "@/components/ui/PanelProfileCard";
-import { ProfileCard3D } from "@/components/ui/ProfileCard3D";
 import Radar from "@/components/ui/PanelRadar";
 import SearchContacts from "@/components/ui/PanelSearchContacts";
 import SearchZones from "@/components/ui/PanelSearchZones";

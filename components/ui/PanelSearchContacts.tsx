@@ -1,25 +1,11 @@
 import * as React from "react"
-import { Button } from "@/components/ui/button"
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+  Card
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+
 import comms from "@/constants/data";
 export function SearchContacts() {
-    const profiledata = comms[2];
   return (
     <Card className="h-full bg-black">
         <Input type="text" placeholder="Search Contacts" className="h-full font-light"/>

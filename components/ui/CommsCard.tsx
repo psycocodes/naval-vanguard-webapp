@@ -10,15 +10,6 @@ const CommsCard = ({ props }: { props: any }) => {
     | "unknown";
   type ColorScheme = { [key in Priority]: string };
 
-  // Define the color scheme with explicit types
-  const colorScheme: ColorScheme = {
-    routine: "blue",
-    confidential: "fuchsia",
-    urgent: "amber",
-    immediate: "red",
-    secret: "violet",
-    unknown: "emerald",
-  };
   // Dynamically generate colorClasses based on colorScheme
   const colorClasses: { [key: string]: string } = {
     routine: "text-blue-500",

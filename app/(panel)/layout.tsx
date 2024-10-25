@@ -1,6 +1,4 @@
-import MilitaryNavBar from "@/components/ui/MilitaryNavBar";
 import NavBar from "@/components/ui/NavBar";
-import PanelNavBar from "@/components/ui/PanelNavBar";
 import React from "react";
 
 export default function PanelLayout({
