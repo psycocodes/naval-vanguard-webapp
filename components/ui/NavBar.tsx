@@ -20,7 +20,7 @@ const NavBar = ({ fixed }: { fixed: boolean }) => {
     const accentColor = "text-amber-300";
     // This is done to ensure Home doesnt get highlighted in other tabs
     // Determine if the link is active based on the current path
-    const isRootPath = itemLink === "/";
+    const isRootPath = itemLink === "/landing";
     const isExactMatch = itemLink === currentPath;
     const isSubPath = !isRootPath && currentPath.startsWith(itemLink);
 
