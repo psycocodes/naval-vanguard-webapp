@@ -1,4 +1,5 @@
-
+import NavBar from "@/components/ui/NavBar";
+import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -56,7 +57,15 @@ export default function RootLayout({
       <body
         className={` ${interAlt.className} ${centauriDefault.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${interItalic.variable} ${BlackOpsOne.variable} antialiased dark`}
       > 
-        {children}
+            <html lang="en" className="dark">
+      <body
+        className={` ${interAlt.className} ${centauriDefault.variable} ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${interItalic.variable} antialiased dark`}
+      >
+        <NavBar/>
+        <div className="absolute inset-0 top-[3rem]">{children}</div>
+        <Toaster></Toaster>
+      </body>
+    </html>
       </body>
     </html>
   );
