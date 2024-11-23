@@ -1,4 +1,5 @@
 import NavBar from "@/components/ui/NavBar";
+import { Toaster } from "@/components/ui/toaster";
 import React from "react";
 
 export default function PanelLayout({
@@ -9,7 +10,7 @@ export default function PanelLayout({
   return (
     <html lang="en">
       <body>
-        <section className="grid w-screen h-screen bg-slate-950 grid-rows-[auto_1fr] no-scrollbar">
+        <section className="grid w-screen h-screen bg-slate-950 grid-rows-[auto_1fr] no-scrollbar ">
         <header className="h-full">
             <NavBar fixed={false}></NavBar>
           </header>
@@ -18,6 +19,7 @@ export default function PanelLayout({
                 {children}
             </div>
           </main>
+          <Toaster></Toaster>
         </section>
       </body>
     </html>

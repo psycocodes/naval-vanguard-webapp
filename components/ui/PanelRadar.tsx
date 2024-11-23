@@ -4,20 +4,24 @@ import {
   CardDescription,
   CardFooter,
   CardHeader,
+  CardContent,
   CardTitle,
 } from "@/components/ui/card"
 
-import comms from "@/constants/data";
+import Map from "@/map/map-element";
+
 export function Radar() {
-    const profiledata = comms[2];
   return (
     <Card className="h-full bg-black p-2 relative">
       <CardHeader>
-        <CardTitle>{profiledata.vessel_name}</CardTitle>
-        <CardDescription>{profiledata.additional_info}</CardDescription>
+        <CardTitle>Radar</CardTitle>
+        <CardDescription>Zoom In and Zoom Out for Accessbility</CardDescription>
       </CardHeader>
+      <CardContent>
+        <Map></Map>
+      </CardContent>
       <CardFooter className="absolute bottom-0 right-0 p-4 pr-5">
-        <CardDescription className="text-right text-muted-foreground">{profiledata.time}, {profiledata.date}</CardDescription>
+        <CardDescription className="text-right text-muted-foreground"></CardDescription>
       </CardFooter>
     </Card>
   )
